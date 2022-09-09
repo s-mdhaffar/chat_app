@@ -80,6 +80,51 @@
         border-radius: 10px;
         height: 65%;
         width: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar{
+            flex: 1;
+            background-color: #3e3c61;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #2f2d52;
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: #ddddf7;
+
+                .logo{
+                    font-weight: bold;
+                }
+                .user{
+                    display: flex;
+                    gap: 10px;
+
+                    img{
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        background-color: #ddddf7;
+                        object-fit: cover;
+                    }
+                    button{
+                        cursor: pointer;
+                        border: none;
+                        font-size: 10px;
+                        background-color: #5d5b8d;
+                        color: #ddddf7;
+                    }
+                }
+            }
+        }
+
+        .chat{
+            flex: 2;
+        }
+
         
     }
 }
