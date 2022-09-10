@@ -1,3 +1,10 @@
+@mixin phone {
+    @media  screen and (max-width:480px) {
+        @content
+    }
+}
+
+
 .formContainer{
     background-color: #a7bcff;
     height: 100vh;
@@ -98,6 +105,9 @@
 
                 .logo{
                     font-weight: bold;
+                    @include phone{
+                        display: none;
+                    }
                 }
                 .user{
                     display: flex;
@@ -238,7 +248,7 @@
                         flex-direction: row-reverse;
                         .messageContent{
                             align-items: flex-end;
-                            
+
                             p{
                                 color: #fff;
                                 background-color: #8da4f1;
